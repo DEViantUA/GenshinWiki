@@ -23,7 +23,7 @@
 
 ## Установка:
 ~~~python
-git clone https://github.com/DEViantUA/GenshinWiki
+pip install git+https://github.com/DEViantUA/GenshinWiki.git
 ~~~
 
 ## Использование:
