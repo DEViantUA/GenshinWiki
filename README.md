@@ -14,7 +14,7 @@
 
 
 ### Навигация:
-* Английская версия
+* [Английская версия](https://github.com/DEViantUA/GenshinWiki/wiki/Wiki-English)
 * Установка
 * Использование
 * МетодЫ
