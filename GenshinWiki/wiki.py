@@ -14,22 +14,22 @@ class Wiki(metaclass=ABCMeta):
         self.langAmbr, self.lang = langSet(lang)
 
     #=======ПОЛУЧЕНИЕ ИНФОРМАЦИИ О ОРУЖИЕ=============
-    def weapon(self, id = None):
+    def weapon(self, name = None):
         if id is None:
             return self.send(params = "weapon")
-        return self.send(params = isin(id), categoria = "weapons")
+        return self.send(params = isinStr(name,parameter = "name"), categoria = "weapons")
 
     #=======ПОЛУЧЕНИЕ ИНФОРМАЦИИ О Еде/Ингредиенте=============
-    def food(self, id = None):
+    def food(self, name = None):
         if id is None:
             return self.send(params = "food")
-        return self.send(params = isin(id), categoria = "foods")
+        return self.send(params = isinStr(name,parameter = "name"), categoria = "foods")
 
     #=======ПОЛУЧЕНИЕ ИНФОРМАЦИИ О АРТЕФАКТАХ=============
-    def reliquary(self, id = None):
+    def reliquary(self, name = None):
         if id is None:
             return self.send(params = "reliquary")
-        return self.send(params = isin(id), categoria = "artifacts")
+        return self.send(params = isinStr(name,parameter = "name"), categoria = "artifacts")
 
     #=======ПОЛУЧЕНИЕ ПЕРСОНАЖЕЙ=============
     def avatar(self, avatarName = None):
@@ -60,8 +60,8 @@ class WikiDb(Wiki):
         return self.send(params = isinStr(avatarName), categoria= "talents")
 
     #=======ПОЛУЧЕНИЕ ПРОТИВНИКОВ=============
-    def enemies(self, enemiesName = 0):
-        return self.send(params = isinStr(enemiesName, parameter = enemiesName), categoria = "enemies")
+    def enemies(self, enemiesName = None):
+        return self.send(params = isinStr(enemiesName, parameter = "enemiesName"), categoria = "enemies")
     
 class WikiAmbr(Wiki):
     def send(self,params = None):
