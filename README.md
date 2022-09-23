@@ -1,1 +1,1 @@
-# GenshinWikiDb
+img/GenshinWikiBanner.png
