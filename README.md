@@ -6,7 +6,10 @@
 # GenshinWiki
  Простой пакет Python для облегчения работы с API: [Project Ambert](https://ambr.top/ru) и [genshin-db](https://github.com/theBowja/genshin-db)
 <p align="center">
-<img src="https://img.shields.io/badge/Telegram-14354C?style=for-the-badge&logo=telegram"/> <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"/>
+
+
+<a href="https://t.me/genshinWiki">
+<img src="https://img.shields.io/badge/Telegram-14354C?style=for-the-badge&logo=telegram"/></a> <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"/>
 </p>
 
 
