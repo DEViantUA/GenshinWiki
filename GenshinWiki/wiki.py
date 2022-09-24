@@ -1,10 +1,11 @@
 # Copyright 2022 DEViantUa <t.me/deviant_ua>
 # All rights reserved.
 import requests
-from ErrorClass import DGWikiError
 from abc import ABCMeta
-from util import *
-from wiki_api_params import *
+
+from .ErrorClass import DGWikiError
+from .util import *
+from .wiki_api_params import *
 
 
 class Wiki(metaclass=ABCMeta):
