@@ -5,7 +5,7 @@ __all__ = ["langSet",
     "isinStr"
     ]
     
-from ErrorClass import DGError
+from .ErrorClass import DGError
 
 langSetting = "ru-ru, ru, en-en, en"
 
