@@ -16,19 +16,19 @@ class Wiki(metaclass=ABCMeta):
 
     #=======ПОЛУЧЕНИЕ ИНФОРМАЦИИ О ОРУЖИЕ=============
     def weapon(self, name = None):
-        if id is None:
+        if name is None:
             return self.send(params = "weapon")
         return self.send(params = isinStr(name,parameter = "name"), categoria = "weapons")
 
     #=======ПОЛУЧЕНИЕ ИНФОРМАЦИИ О Еде/Ингредиенте=============
     def food(self, name = None):
-        if id is None:
+        if name is None:
             return self.send(params = "food")
         return self.send(params = isinStr(name,parameter = "name"), categoria = "foods")
 
     #=======ПОЛУЧЕНИЕ ИНФОРМАЦИИ О АРТЕФАКТАХ=============
     def reliquary(self, name = None):
-        if id is None:
+        if name is None:
             return self.send(params = "reliquary")
         return self.send(params = isinStr(name,parameter = "name"), categoria = "artifacts")
 
